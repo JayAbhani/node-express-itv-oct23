@@ -113,6 +113,7 @@
 
 
 
+
 // 4. execution context
 
 // container where js code gets run
@@ -136,7 +137,7 @@
 console.log(a);     //1- undefined      done
 one();              //2- hello          done
 console.log(one);   //3- fn             done
-console.log(b);     //4- error          done
+console.log(b);     //4- error - not defined         done
 
 var a = 5;          //5                 done
 
