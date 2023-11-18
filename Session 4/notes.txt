@@ -27,6 +27,9 @@ commonly used global variables:
     2. __filename: stores the path to the current working file
 
 
+    global.myVariable = "hello world";
+
+
 
 modules in nodejs
 --------------------------------------
@@ -38,8 +41,16 @@ a module is a collection of reusable code
 
 2. built-in modules
     these are the modules included in node by default. so we can use them without installation.
+
         OS
          provides the operating system information
+
+         upTime
+         userInfo
+         type
+         release
+         totalmem
+         freemem
 
         PATH
             to work with file and directory paths
@@ -49,6 +60,14 @@ a module is a collection of reusable code
             - get last portion/segment of a path
             - get file extension from a path
             - AND MUCH MORE!
+
+            basename
+            extname
+            dirname
+            parse
+            sep
+            join
+            resolve
 
         FS
             to work with files (for file handling)
@@ -61,12 +80,27 @@ a module is a collection of reusable code
             - creating a directory
             - AND MUCH MORE!
 
+            mkdir
+            writeFile
+            appendFile
+            readFile
+            readdir
+            rename
+            unlink
+
 
         HTTP
+            provides functionality to create HTTP servers and make http requests.
+
+            createServer
+                res.writeHead
+                res.end
 
 
 3. external modules
     these modules are created by other developers which are not included by degault. we need to install them first before using them.
+
+    npm i <module_name>
 
     npm - nahi pat amujhe
          naam paneer makhani
