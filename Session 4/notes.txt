@@ -31,3 +31,16 @@ commonly used global variables:
 modules in nodejs
 --------------------------------------
 a module is a collection of reusable code
+
+1. user modules
+    module.exports
+    require()
+
+2. built-in modules
+
+
+3. external modules
+    these modules are created by other developers which are not included by degault. we need to install them first before using them.
+
+    npm - nahi pat amujhe
+         naam paneer makhani
