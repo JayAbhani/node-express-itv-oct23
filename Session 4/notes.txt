@@ -37,6 +37,21 @@ a module is a collection of reusable code
     require()
 
 2. built-in modules
+    these are the modules included in node by default. so we can use them without installation.
+        OS
+         provides the operating system information
+
+        PATH
+            to work with file and directory paths
+
+            - join path segments together
+            - tell if a path is absolute or not
+            - get last portion/segment of a path
+            - get file extension from a path
+            - AND MUCH MORE!
+
+        FS
+        HTTP
 
 
 3. external modules
