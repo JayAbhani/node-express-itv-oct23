@@ -51,6 +51,17 @@ a module is a collection of reusable code
             - AND MUCH MORE!
 
         FS
+            to work with files (for file handling)
+
+            - read files (both synchronous and asynchronous)
+            - write files (both synchronous and asynchronous)
+            - delete files
+            - read contents of a directory
+            - renaming a file
+            - creating a directory
+            - AND MUCH MORE!
+
+
         HTTP
 
 
