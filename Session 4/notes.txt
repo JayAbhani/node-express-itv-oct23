@@ -1,0 +1,33 @@
+what is node
+---------------------
+runtime environment for javascript
+
+
+how js gets executed in browser
+------------------------------------
+v8 engine
+
+
+node => chrome's js v8 engine + apis and modules
+
+
+
+how to install nodejs
+----------------------------------
+
+
+
+
+global variables
+-----------------------------------
+variables which store some data and can be accessed from anywhere in your code - no matter hw deeply nested your code is.
+
+commonly used global variables:
+    1. __dirname: stores the path to the current working directory
+    2. __filename: stores the path to the current working file
+
+
+
+modules in nodejs
+--------------------------------------
+a module is a collection of reusable code
