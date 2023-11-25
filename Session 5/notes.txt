@@ -1,0 +1,15 @@
+express
+---------------------------
+- the most popular node js framework because it requires minimum setup to start an app or an api.
+
+
+
+
+structure of server file
+-------------------------------------
+1. dependencies
+2. instantiations
+3. configurations
+4. middleware
+5. routes
+6. bootstrapping server

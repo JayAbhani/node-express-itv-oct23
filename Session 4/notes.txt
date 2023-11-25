@@ -98,9 +98,9 @@ a module is a collection of reusable code
 
 
 3. external modules
-    these modules are created by other developers which are not included by degault. we need to install them first before using them.
+    these modules are created by other developers which are not included by default. we need to install them first before using them.
 
     npm i <module_name>
 
-    npm - nahi pat amujhe
-         naam paneer makhani
+    npm - nahi pata mujhe
+         naan paneer makhani
