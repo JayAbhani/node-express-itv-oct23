@@ -1,0 +1,38 @@
+nodejs promises
+-------------------------------------
+
+
+
+
+
+bluebird promises
+----------------------------------------
+
+
+
+
+
+callback
+-----------------------------------------
+
+
+
+
+
+generators
+--------------------------------------------
+
+
+
+
+
+streams
+----------------------------------------------
+streams are a concept in node js to handle reading or writing data in chunks, instead of loading the entire dataset into memory.
+
+
+types of streams:
+    readble
+    writable
+    duplex
+    transform
