@@ -36,3 +36,89 @@ types of streams:
     writable
     duplex
     transform
+
+
+
+
+
+jasmine framework for unit testing
+-------------------------------------------------
+
+
+
+
+
+connecting mongodb with nodejs
+-----------------------------------------------
+Here's a step-by-step guide on how to connect MongoDB with Node.js using MongoDB Atlas and write a simple query:
+
+Step 1: Create a MongoDB Atlas Account
+Go to the MongoDB Atlas website.
+Sign up for an account or log in if you already have one.
+Create a new cluster (you can choose the free tier).
+
+Step 2: Set Up a Database User
+In the MongoDB Atlas dashboard, navigate to your cluster.
+Click on "Database Access" in the left-hand menu.
+Click "Add New Database User" and set up a username and password.
+
+Step 3: Whitelist Your IP Address
+Still in the MongoDB Atlas dashboard, click on "Network Access" in the left-hand menu.
+Click "Add IP Address" and either add your current IP address or allow access from any IP by adding 0.0.0.0/0.
+
+Step 4: Get Connection String
+In the MongoDB Atlas dashboard, click on "Clusters" in the left-hand menu.
+Click "Connect" on your cluster.
+Choose "Connect your application" and copy the connection string.
+
+Step 5: Set Up a Node.js Project
+Create a new directory for your Node.js project.
+Navigate to the project directory in the terminal and run npm init to initialize a new Node.js project.
+
+Step 6: Install Required Packages
+Install the mongodb package using the following command:
+npm install mongodb
+
+Step 7: Write a Simple Node.js Script
+Create a new file (e.g., app.js) in your project directory and write the following code:
+
+const { MongoClient } = require('mongodb');
+
+// Replace <YOUR_CONNECTION_STRING> with the actual connection string from Step 4
+const uri = '<YOUR_CONNECTION_STRING>';
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+
+async function run() {
+  try {
+    await client.connect();
+    console.log('Connected to the database');
+
+    const database = client.db('<YOUR_DATABASE_NAME>'); // Replace with your database name
+    const collection = database.collection('<YOUR_COLLECTION_NAME>'); // Replace with your collection name
+
+    // Write a simple query
+    const query = { name: 'John Doe' };
+    const result = await collection.findOne(query);
+
+    console.log('Query Result:', result);
+  } finally {
+    await client.close();
+    console.log('Connection closed');
+  }
+}
+
+run();
+
+Step 8: Run Your Node.js Script
+In the terminal, run your Node.js script:
+node app.js
+
+This script connects to your MongoDB Atlas cluster, performs a simple query on a collection, and prints the result.
+
+Make sure to replace <YOUR_CONNECTION_STRING>, <YOUR_DATABASE_NAME>, and <YOUR_COLLECTION_NAME> with your actual values.
+
+That's it! You've successfully connected MongoDB with Node.js using MongoDB Atlas and executed a simple query.
+
+
+
+
